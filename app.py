@@ -9,7 +9,7 @@ st.header('Vehicles Data')
 search_button = st.button('Search')
 
 if search_button:
-    st.write("Histogram creation")
+    st.write("Creating Car Mileage Histogram")
 
     fig = px.histogram(car_data, x='odometer')
     st.plotly_chart(fig, use_container_width=True)
